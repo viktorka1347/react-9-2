@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Times New Roman', serif;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1.4;
+  color: black;
+  background-color: transparent;
+}
+
+body {
+  font-size: 16px;
+  background-color: #B84B4E;
+}
+
+a, img, input {
+  display: block;
+}
+
+a {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  color: white;
+  text-decoration: none;
+  background-color: #4468B6;
+  border-radius: 3px;
+  cursor: default;
+}
+
+a:hover {
+  background-color: orange;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+.App {
+  width: 500px;
+  margin: 50px auto;
+}
+
+.PostsList {
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.PostsList-new {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.3em 0.5em 0.3em 0;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.PostsList-new-button {
+  padding: 0.2em 0.4em;
+}
+
+.PostsList-post-button {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  padding: 0.3em;
+  font-size: 2em;
+  color: lightgray;
+  background-color: transparent;
+}
+
+.Post {
+  position: relative;
+  margin-top: 10px;
+  border-radius: 5px;
+  overflow: hidden;  
+}
+
+.Post-content {
+  padding: 0.5em 1em;
+  background-color: white;  
+}
+
+.Post-ago {
+  position: absolute;
+  left: 41%;
+  top: 32px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.75em;
+}
+
+.NewPost {
+  position: relative;
+  padding: 10px;
+  background-color: gray;
+}
+
+.NewPost-image {
+  border-radius: 5px 5px 0 0;  
+}
+
+.NewPost-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 0.5em;
+  font-size: 0.9em;
+  color: gray;
+  background-color: transparent;
+}
+
+.NewPost-input {
+  position: absolute;
+  left: 15%;
+  top: 38%;
+  width: 70%;
+  padding: 0.3em 1em;
+}
+
+.NewPost-post {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.3em 0.5em 0.3em 0;  
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.NewPost-post-button {
+  padding: 0.2em 1em;
+}
+
+.ViewPost {
+  position: relative;
+  padding: 1px 10px 10px 10px;
+  background-color: lightgray;
+}
+
+.ViewPost-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5em;
+  font-size: 0.9em;
+  color: gray;
+  background-color: transparent;
+}
+
+.ViewPost-modify {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.3em 0.5em 0.3em 0; 
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.ViewPost-edit {
+  padding: 0.2em 0.4em;
+}
+
+.ViewPost-delete {
+  margin-left: 0.4em;
+  padding: 0.2em 0.4em;
+  background-color: #B84B4E; 
+}
+
+.EditPost {
+  position: relative;
+  padding: 10px;
+  background-color: gray;
+}
+
+.EditPost-image {
+  border-radius: 5px 5px 0 0;  
+}
+
+.EditPost-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 0.7em;
+  font-size: 0.9em;
+  color: gray;
+  background-color: transparent;
+}
+
+.EditPost-input {
+  position: absolute;
+  left: 15%;
+  top: 22.5%;
+  width: 70%;
+  padding: 0.3em 1em;
+}
+
+.EditPost-save {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em 0.5em 0.4em 0;  
+  background-color: #F5F6F8;
+  border-radius: 0 0 5px 5px;
+}
+
+.EditPost-save-button {
+  padding: 0.2em 1em;
+}
+
+.Fetch-waiting {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: black;
+  opacity: 0.5;
+}
+
+.Fetch-waiting-text {
+  font-size: 3em;
+  color: white;
+}
+
+.Fetch-error {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: white;
+}
+
+.Fetch-error-text {
+  font-size: 3em;
+  color: red; 
+}
